@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: python-app-service-{{ .Values.color }}
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    app.kubernetes.io/name: python-app-{{ .Values.color }}
+  ports:
+  - name: python-app-{{ .Values.color }}
+    protocol: TCP
+    port: 80
+    targetPort: 5000
