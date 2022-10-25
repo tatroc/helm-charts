@@ -7,5 +7,5 @@ export chart_name=helm-test-chart
 
 helm package charts/helm-test-chart --version $version
 
-
-helm repo index --url https://github.com/tatroc/helm-charts/ . 
+helm repo index --url https://tatroc.github.io/helm-charts/ .
+cat index.yaml
