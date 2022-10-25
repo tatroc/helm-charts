@@ -11,6 +11,9 @@ Create index of new helm chart
 ```
 helm repo index --url https://tatroc.github.io/helm-charts/ .
 cat index.yaml
+git add .
+git commit -m 'new helm package'
+git push
 ```
 
 
